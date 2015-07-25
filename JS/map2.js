@@ -730,7 +730,7 @@ optionpie2 = {
         optionpie1.series[0].data[0].value = 100 - pie1;
         optionpie1.series[0].data[1].value = pie1;
         var datelow = parseInt(pie1 * 365 * 0.01);
-        var datehigh = 360 - datelow;
+        var datehigh = 365 - datelow;
 
         optionpie1.series[0].data[0].name = optionpie1.legend.data[0] = "AQI>200              " + datehigh + "天            占" + (100 - pie1) + "%";
         optionpie1.series[1].data[0].name = optionpie1.legend.data[1] = "AQI<200              " + datelow + "天            占" + pie1 + "%";
@@ -740,7 +740,7 @@ optionpie2 = {
         var pie2 = optionpie2.series[0].data[1].value = parseInt((countlow3 / 12 * 100));
         optionpie2.series[0].data[1].name = optionpie2.legend.data[1] = "200<AQI<250       " + parseInt(pie2 * 365 * 0.01) + "天         " + pie2 + "%";
         optionpie2.series[0].data[2].value = 100 - pie1 - pie2;
-        optionpie2.series[0].data[2].name = optionpie2.legend.data[2] = "AQI>250                " + (360 - parseInt((pie2 + pie1) * 365 * 0.01)) + "天         " + (100 - pie1 - pie2) + "%";
+        optionpie2.series[0].data[2].name = optionpie2.legend.data[2] = "AQI>250                " + (365 - parseInt((pie2 + pie1) * 365 * 0.01)) + "天         " + (100 - pie1 - pie2) + "%";
         /* alert("value:"+optionpie2.series[0].data[1] .value+optionpie2.series[0].data[1].name) ;
          */
 
